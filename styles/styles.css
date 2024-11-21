@@ -216,6 +216,7 @@ select {
 
 input[type="text"],
 input[type="email"],
+input[list],
 select,
 textarea {
     padding: 4px 8px;
@@ -227,7 +228,7 @@ textarea {
 }
 
 label:nth-of-type(1),
-label:nth-of-type(2){
+label:nth-of-type(2) {
     display: inline-block;
 }
 
