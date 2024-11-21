@@ -47,6 +47,11 @@ input, textarea, select {
     font-family: inherit;
 }
 
+input::placeholder {
+    color: var(--text-primary); /* Gebruik de kleur die je wilt toepassen */
+}
+
+
 blockquote,
 table,
 caption,
