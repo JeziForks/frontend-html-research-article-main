@@ -7,7 +7,7 @@
 	<title>Scientific Research Article</title>
 </head>
 <body>
-
+<header>
 <aside>
 	<nav>
 
@@ -29,13 +29,11 @@
 		</ol>
 	</nav>
 </aside>
-
+</header>
 
 <main>
 	<article>
-		<header>
-
-			<h4>Computers & Education</h4>
+		<h4>Computers & Education</h4>
 			<a href="https://www.sciencedirect.com/journal/computers-and-education/vol/128/suppl/C">Volume 128</a>,
 			<time datetime="2019-01">January 2019</time>
 			,
@@ -46,20 +44,24 @@
 			</h1>
 			<address><a href="https://www.scopus.com/authid/detail.uri?authorId=57204187244">Shahira Popat</a>, <a
 					href="https://www.scopus.com/authid/detail.uri?authorId=25121914800">Louise Starkey</a></address>
-		</header>
+
 
 		<h2 id="abstract">Abstract</h2>
-		<p><em>De heropleving van computerprogrammeren in het schoolcurriculum biedt de belofte om studenten voor te
+		<section><p><em>De heropleving van computerprogrammeren in het schoolcurriculum biedt de belofte om studenten
+			voor
+			te
 			bereiden op de toekomst, waarbij de leerervaring verder gaat dan alleen het leren coderen. Dit onderzoek
 			heeft de bestaande literatuur geanalyseerd om de educatieve resultaten voor kinderen die op school leren
 			programmeren te onderzoeken. Er is een <u>systematische review</u> toegepast om relevante artikelen te
 			identificeren, en een thematische analyse uitgevoerd om de bevindingen te synthetiseren. Tien artikelen
 			werden opgenomen in de synthese, waarbij een overkoepelend model werd ontwikkeld dat de belangrijkste
-			thema's weergeeft. De resultaten tonen aan dat, hoewel studenten leren programmeren, een scala aan andere
+			thema's weergeeft. De resultaten tonen aan dat, hoewel studenten leren programmeren, een scala aan
+			andere
 			educatieve uitkomsten kan worden bereikt of geoefend door middel van het onderwijzen van coderen. Deze
 			uitkomsten omvatten wiskundig probleemoplossen, kritisch denken, <u>sociale vaardigheden</u>,
-			zelfmanagement en academische vaardigheden. De review benadrukt ook het belang van instructieontwerp voor
-			het ontwikkelen van deze educatieve uitkomsten door middel van coderen.</em></p>
+			zelfmanagement en academische vaardigheden. De review benadrukt ook het belang van instructieontwerp
+			voor
+			het ontwikkelen van deze educatieve uitkomsten door middel van coderen.</em></p></section>
 
 		<hr>
 
@@ -281,9 +283,11 @@ print(fibonacci(10))
 	<form>
 		<fieldset>
 			<legend>Gegevens</legend>
-			<label>Naam: <input type="text" name="naam" required> </label>
+			<!--			Autocomplete attribuut toegevoegd, want anders komt een password manager mogelijk met een suggestie die niet
+						overeenkomt met de vereiste input, want  wachtwoordmanagers vertrouwen vaak op de aanwezigheid van het autocomplete-attribuut om te begrijpen welk type gegevens een invoerveld verwacht-->
+			<label>Naam: <input type="text" name="naam" autocomplete="given-name" required> </label>
 
-			<label>Email: <input type="email" name="email" required> </label>
+			<label>Email: <input type="email" name="email" autocomplete="family-name" required> </label>
 		</fieldset>
 
 		<fieldset>
